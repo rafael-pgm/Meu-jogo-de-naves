@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+}
+
+#tela {
+  position: relative;
+  background-color: black;
+  width: 1000px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#nave {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  border: 2px solid black;
+  /* left = width da tela menos a metade da nave */
+  left: (50% -15px);
+  bottom: 0;
+  background: URL("/assets/img/Nave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.invasor {
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  border: 1px solid black;
+  background: URL("/assets/img/Invasor-Spaceship.png");
+  background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.tiro{
+    position: absolute;
+    /* altura da nave + 1 px */
+    bottom: 41px;
+    
+    /* distancia do meio da nave  */
+    /* left: 28%; */
+    width: 15px;
+    height: 15px;
+    background: URL("/assets/img/tiro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pontuacao {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: goldenrod;
+    
+}
+#pontos{
+    position: relative;
+    top: 3px;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: goldenrod;
+    text-align: center;    
+}
